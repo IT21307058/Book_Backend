@@ -17,11 +17,21 @@ namespace BMS.Controllers
             this.dBContext = dBContext;
         }
         [HttpGet]
-        public IActionResult getAllBooks()
+        public IActionResult getAllBooks([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
         {
-            var books = dBContext.Books.ToList();
+            var books = dBContext.Books.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
 
-            return Ok(books);
+            var totalBooks = dBContext.Books.Count();
+
+            var response = new
+            {
+                TotalBooks = totalBooks,
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalPages = (int)Math.Ceiling(totalBooks / (double)pageSize),
+                Books = books
+            };
+            return Ok(response);
         }
 
         [HttpPost]
