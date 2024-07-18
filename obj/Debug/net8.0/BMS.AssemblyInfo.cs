@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3064709b757f307cef20947adcb9207d9ac6658")]
 [assembly: System.Reflection.AssemblyProductAttribute("BMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

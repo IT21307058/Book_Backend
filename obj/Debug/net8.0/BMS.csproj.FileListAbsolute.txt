@@ -33,3 +33,4 @@ C:\Users\User\source\repos\BMS\BMS\obj\Debug\net8.0\ref\BMS.dll
 C:\Users\User\source\repos\BMS\BMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\User\source\repos\BMS\BMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\User\source\repos\BMS\BMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\User\source\repos\BMS\BMS\obj\Debug\net8.0\BMS.sourcelink.json

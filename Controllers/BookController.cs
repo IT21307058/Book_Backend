@@ -42,5 +42,55 @@ namespace BMS.Controllers
 
             return Ok(domainModelBook);
         }
+
+        [HttpGet]
+        [Route("{id:guid}")]
+        public IActionResult getBookId(Guid id)
+        {
+            var book = dBContext.Books.Find(id);
+
+            if(book == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(book);
+        }
+
+        [HttpPatch]
+        [Route("{id:guid}")]
+        public IActionResult updateBook(Guid id, AddBookRequestDTO request)
+        {
+            var book = dBContext.Books.Find(id);
+
+            if (book == null) {
+                return NotFound();
+            }
+
+            book.Title = request.Title;
+            book.Author = request.Author;
+            book.Description = request.Description;
+            book.ISBN = request.ISBN;
+            book.publicationDate = request.publicationDate;
+
+            dBContext.SaveChanges();
+            return Ok(book);
+        }
+
+
+        [HttpDelete]
+        [Route("{id:guid}")]
+        public IActionResult deleteBook(Guid id)
+        {
+            var book = dBContext.Books.Find(id);
+
+            if(book is not null)
+            {
+                dBContext.Books.Remove(book);
+                dBContext.SaveChanges();
+            }
+
+            return Ok();
+        }
     }
 }
