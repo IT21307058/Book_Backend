@@ -1,4 +1,4 @@
-# Enhanzer (Manage a list of books)
+# Enhanzer (Manage a list of books) / Backend
 
 #### Brief Description of Project
 To create a simple web application that allows users to manage a list of books. Users should be
@@ -7,6 +7,8 @@ and ASP.NET with C# for the backend.
 
 
 ### Swagger API Endpoint Documentation - https://localhost:7074/swagger/index.html
+
+![image](https://github.com/user-attachments/assets/1bfd98a8-e539-4856-a145-a21996bf6057)
 
 
 ### ASP.NET Project Structure
