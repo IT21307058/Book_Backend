@@ -6,6 +6,8 @@ able to add, view, update, and delete books. The application will use Angular fo
 and ASP.NET with C# for the backend.
 
 
-### API Endpoint Documentation - https://localhost:7074/swagger/index.html
+### Swagger API Endpoint Documentation - https://localhost:7074/swagger/index.html
 
+
+### ASP.NET Project Structure
 ![image](https://github.com/user-attachments/assets/fec58f90-b9ad-4449-a1b8-01bac914ed50)
